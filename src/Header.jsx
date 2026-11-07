@@ -1,5 +1,8 @@
+import "@fontsource/roboto/300.css";
+import Typography from "@mui/material/Typography";
+
 export const Header = () => (
-  <div className="header">
-    <header>IGEO Erdbebenmonitor</header>
-  </div>
+  <Typography className="header" variant="h4" sx={{ color: "#278EF5" }}>
+    IGEO Erdbebenmonitor
+  </Typography>
 );
