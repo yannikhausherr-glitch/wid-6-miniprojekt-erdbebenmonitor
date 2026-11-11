@@ -67,7 +67,7 @@ export const Header = ({ magnitude, setMagnitude, time, setTime }) => (
           </Button>
           <Button
             variant={time === "month" ? "contained" : "outlined"}
-            onClick={() => setMagnitude("month")}
+            onClick={() => setTime("month")}
           >
             month
           </Button>

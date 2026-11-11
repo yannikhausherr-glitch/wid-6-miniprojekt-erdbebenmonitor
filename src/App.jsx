@@ -12,7 +12,7 @@ function App() {
   const [post, setPost] = useState([]);
   const [magnitude, setMagnitude] = useState("4.5");
   const [time, setTime] = useState("day");
-  s;
+
   useEffect(() => {
     fetch(
       `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/${magnitude}_${time}.geojson`,
