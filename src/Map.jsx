@@ -11,8 +11,8 @@ import Button from "@mui/material/Button";
 import data from "./assets/4.5_week.geojson.json";
 import data1 from "./assets/plate_boundaries.geojson.json";
 
-export const Map = ({ detail, setDetail, size }) => {
-  const earthquakes = data.features; // Wir benötigen nur den Feature-Array aus den Daten
+export const Map = ({ setDetail, size, post }) => {
+  const earthquakes = post.features || [];
 
   return (
     <MapContainer
